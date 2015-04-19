@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace是mapper接口的全限定名 --> 
+
+<mapper namespace="com.example.messageboard.dao.UserDao">
+    	<insert id="insertUser"  parameterType="User" >
+    	    insert into User (id, user_name,user_password)
+    	    values(#{id},#{username},#{password})
+    	</insert>
+    	
+    	<select id="checkUser"  resultType="User">
+    	    select id,user_name username,user_password password from User 
+    	    where user_name=#{uuu} and user_password=#{ppp}
+    	</select>
+    	
+    	<select id="getUserName" parameterType="int" resultType="string">
+    	    select user_name from user where id=#{id}
+    	</select>
+    	
+</mapper>
