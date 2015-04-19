@@ -10,7 +10,7 @@
 <title>登录成功</title>
 </head>
 <body>
-<h1>登录成功233</h1>
+<h1>登录成功user.name已变更</h1>
 <p>会话中的user对象：<s:property value="#session.user.username"/></p>
 <p>请求中的user对象：<s:property value="#request.user.username"/></p>
 <jsp:useBean id="user" class="com.example.messageboard.model.User" scope="session"></jsp:useBean>
