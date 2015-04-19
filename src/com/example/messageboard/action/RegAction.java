@@ -29,7 +29,7 @@ public class RegAction {
 
 
 	public String execute() throws Exception {
-		
+		//github
 		User u = new User(user.getId(), user.getUsername(), user.getPassword());
 		
 		int flag = udao.insertUser(u);
