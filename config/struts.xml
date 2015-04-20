@@ -24,8 +24,10 @@
 		
 		<action name="ShowMessage" class="VMAction" method="showMessage">
 		    <result name="showMessage">/ViewMessage.jsp</result>
-		    
 		</action>
+		
+		
+		<action name="testScope" class="testActionScope"></action>
 	</package>
 
 </struts>
